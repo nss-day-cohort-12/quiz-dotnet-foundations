@@ -1,5 +1,9 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using LunchQuizTests;
+using LunchQuiz;
+using System.Collections.Generic;
+
 //there's a specific "using" you need in order to create lists
 
 namespace LunchQuizTests
@@ -90,7 +94,7 @@ namespace LunchQuizTests
             MenuItem flavorsOfFried = new MenuItem();
             flavorsOfFried.Name = "Sampler Platter";
             joes.MenuItems.Add(flavorsOfFried);
-            Assert.IsTrue(joes.ItemIsOnMenu("Sampler Platter"));        
+            Assert.IsTrue(joes.ItemIsOnMenu("Sampler Platter"));
         }
 
         [TestMethod]
