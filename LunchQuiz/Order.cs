@@ -14,7 +14,10 @@ namespace LunchQuiz
 
         public bool VerifyOrderComplete()
         {
-            return //if statement
+            return !String.IsNullOrEmpty(Drink) && !String.IsNullOrEmpty(Dessert) && !String.IsNullOrEmpty(Entree);
+            //return !(String.IsNullOrEmpty(Drink) && String.IsNullOrEmpty(Dessert) && String.IsNullOrEmpty(Entree));
+            //return !(String.IsNullOrEmpty(Drink) || String.IsNullOrEmpty(Dessert) || String.IsNullOrEmpty(Entree));
+
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LunchQuiz.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LunchQuiz
 {
-    public class Restaurant
+    public class Restaurant: IProvidesDinner
     {
        public List<MenuItem> MenuItems = new List<MenuItem>();
 
