@@ -21,9 +21,23 @@ namespace LunchQuiz
       CurrentCustomers.Add(customer);
     }
 
-    public int capacity()
+    public virtual int capacity()
     {
       return (Numberof2PersonTables * 2) + (Numberof4PersonTables * 4);
     }
+
+    public bool ItemIsOnMenu(string String)
+    {
+     return MenuItems.Exists(x => x.Name == String);
+    }
+    // in this case, x is a placeholder, it represents the MenuItem itself in MenuItems
+
+    public bool ItemIsOnMenu(MenuItem item)
+    {
+      return MenuItems.Exists(x => x == item);
+    }
+    // here, x = MenuItem, the object itself
+
+
   }
 }

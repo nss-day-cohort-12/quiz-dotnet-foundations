@@ -8,5 +8,21 @@ namespace LunchQuiz
 {
   public class FastFood : Restaurant
   {
+    public bool HasDriveThrough { get; set; }
+
+    public void addMenuItem(string String)
+    {
+      MenuItem item = new MenuItem(String);
+      MenuItems.Add(item);
+    }
+
+    public void addMenuItem(string String, double Double)
+    {
+      MenuItem item = new MenuItem(String, Double);
+      MenuItems.Add(item);
+    }
+
+
+
   }
 }
