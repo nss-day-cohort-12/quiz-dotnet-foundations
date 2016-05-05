@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace LunchQuiz
 {
-  public class Casual : Restaurant
-  {
+  public class Casual : Restaurant, IProvidesDinner, IProvidesLunch
+    {
     public bool HasPatio { get; set; }
 
     public Casual()

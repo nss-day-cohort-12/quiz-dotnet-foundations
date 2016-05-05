@@ -6,12 +6,7 @@ using System.Threading.Tasks;
 
 namespace LunchQuiz
 {
-  class Program
-  {
-    static void Main(string[] args)
+    interface IProvidesDinner
     {
-
-
     }
-  }
 }

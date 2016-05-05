@@ -6,15 +6,17 @@ using System.Threading.Tasks;
 
 namespace LunchQuiz
 {
-  public class FastFood : Restaurant
-  {
+  public class FastFood : Restaurant, IProvidesDinner, IProvidesLunch
+    {
     public bool HasDriveThrough { get; set; }
+
 
     public void addMenuItem(string String)
     {
       MenuItem item = new MenuItem(String);
       MenuItems.Add(item);
     }
+
 
     public void addMenuItem(string String, double Double)
     {

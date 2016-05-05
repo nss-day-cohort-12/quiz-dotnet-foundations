@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace LunchQuiz
 {
-  public class FineDining : Restaurant
-  {
+  public class FineDining : Restaurant, IProvidesDinner
+    {
     public int NumberofSeatsAtBar { get; set; }
 
     public override int capacity()

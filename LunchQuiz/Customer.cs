@@ -8,6 +8,7 @@ namespace LunchQuiz
 {
   public class Customer
   {
+
     public bool ReadyToPlaceOrder(Order order, Restaurant restaurant)
     {
       if(order.VerifyOrderComplete())
