@@ -8,5 +8,6 @@ namespace LunchQuiz.Interfaces
 {
     public interface IProvidesDinner
     {
+        bool OpenSunday { get; set; }
     }
 }

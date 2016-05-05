@@ -21,7 +21,10 @@ namespace LunchQuiz
         public int Numberof4PersonTables { get; set; }
         public int Numberof2PersonTables { get; set; }
 
-        public int capacity()
+        public bool OpenSunday { get; set; }
+        
+
+        public virtual int capacity()
         {
             return Numberof4PersonTables * 4 + Numberof2PersonTables * 2;
         }

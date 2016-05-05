@@ -8,5 +8,6 @@ namespace LunchQuiz.Interfaces
 {
     public interface IProvidesLunch
     {
+        bool KidsMenu { get; set; }
     }
 }

@@ -25,5 +25,7 @@ namespace LunchQuiz
             menuitem.Price = foodPrice;
             MenuItems.Add(menuitem);
         }
+
+        public bool KidsMenu { get; set; }
     }
 }
