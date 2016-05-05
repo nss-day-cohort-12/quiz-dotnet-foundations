@@ -1,5 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using LunchQuiz;
+using System.Collections.Generic;
 //there's a specific "using" you need in order to create lists
 
 namespace LunchQuizTests
